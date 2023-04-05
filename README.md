@@ -1,21 +1,21 @@
-Rails Starter Template with Pay, Devise, and Postgres
-
 # Rails Starter Template with Pay, Devise, and Postgres
 
-This Rails starter template comes with user authentication via Devise, subscription payments via the Pay gem, and PostgreSQL as the database. It's designed to help you quickly set up your Rails application with user authentication and subscription payments.
+This Rails starter template comes with user authentication via [Devise](https://github.com/heartcombo/devise), subscription payments via the [Pay](https://github.com/pay-rails/pay) gem, and PostgreSQL as the database. It's designed to help you quickly set up your Rails application with user authentication and subscription payments.
 
 ## Features
 
 - Devise for user authentication
 - Pay gem for handling subscription payments with Stripe
 - PostgreSQL as the database
+- Out of the box payment support using Stripe Checkout
+- Payment and Subscription management using Stripe Billing
 
 ## Getting Started
 
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/rails-starter-template.git
+git clone https://github.com/Duartemartins/rails-starter-template.git
 ```
 
 2. Change the directory
@@ -145,4 +145,3 @@ Your application should now be up and running with user authentication and subsc
 Make sure to replace the placeholders in the database.yml file and the controller with your actual credentials and Stripe price ID.
 
 Happy coding!
-# rails-starter-template

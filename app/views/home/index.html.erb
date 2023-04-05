@@ -1,0 +1,23 @@
+<div>
+  <h1 class="text-4xl font-bold">Home#index</h1>
+  <p>Find me in app/views/home/index.html.erb</p>
+  <% if user_signed_in? %> 
+ <div> Welcome <%= current_user.email %> </div> 
+<% current_user.set_payment_processor :stripe %>
+  <% if current_user.payment_processor.subscribed? %>
+    <p>You are currently subscribed!</p>
+    <%= link_to "Manage your billing", billing_path, method: :get %>
+  <% else %>
+    <p>You are not subscribed yet. Please <a href="<%= checkout_path %>">subscribe here</a>.</p>
+  <% end %>
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete %> 
+<% else %>
+  <%= button_to "Sign in", new_user_session_path %> 
+<% end %>
+</div>
+  <% if user_signed_in? %> 
+<div>
+<%= current_user.payment_processor.payment_method_token = params[:payment_method_token] %>
+<% end %>
+
+

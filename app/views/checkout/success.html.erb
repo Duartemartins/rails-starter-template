@@ -1,0 +1,5 @@
+<div>
+  <h1 class="text-4xl font-bold">Checkout#success</h1>
+  <p>Find me in app/views/checkout/success.html.erb</p>
+  <%= render partial: "pay/stripe/checkout_button", locals: {session: @checkout_session, title: "Checkout"} %>
+</div>
