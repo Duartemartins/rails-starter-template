@@ -73,7 +73,12 @@ rails db:migrate
 rails secret
 ```
 
-Copy the generated key and add it to your config/secrets.yml file or your environment variables for the SECRET_KEY_BASE value:
+Copy the generated key and add it to your config/credentials.yml.enc file or your environment variables for the SECRET_KEY_BASE value:
+
+```bash
+
+rails credentials:edit
+```
 
 ```yaml
 production:
