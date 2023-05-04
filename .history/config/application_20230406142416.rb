@@ -6,11 +6,11 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Template
+module template
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
-    config.action_mailer.default_url_options = { host: 'render.com' }
+    config.action_mailer.default_url_options = { host: "render.com" }
 
     # Configuration for the application, engines, and railties goes here.
     #
